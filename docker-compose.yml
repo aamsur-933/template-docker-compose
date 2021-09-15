@@ -9,8 +9,6 @@ services:
       - database.env # configure postgres
     networks:
       - db
-    ports:
-      - 5000:5432
 networks:
   db:
     driver: bridge
