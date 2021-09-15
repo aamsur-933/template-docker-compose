@@ -5,6 +5,8 @@ services:
     image: "postgres" # use latest official postgres version
     volumes:
       - database-data:/var/lib/postgresql/data/ # persist data even 
+    env_file:
+      - database.env # configure postgres
     networks:
       - db
     ports:
