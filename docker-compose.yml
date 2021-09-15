@@ -9,6 +9,8 @@ services:
       - database-data:/var/lib/postgresql/data/ # persist data even 
     networks:
       - db
+    ports:
+      - 5000:5432
 networks:
   db:
     driver: bridge
